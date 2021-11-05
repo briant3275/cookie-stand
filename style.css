@@ -1,0 +1,16 @@
+* {
+    background-color: rgb(245, 237, 225);
+    color: rgb(99, 3, 3);
+}
+
+
+table, th, td {
+    border: 1px solid darkblue;
+  }
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
