@@ -140,3 +140,34 @@ const paris = new Store('Paris', 20, 38, 2.3);
 const lima = new Store('Lima', 2, 16, 4.6);
 
 renderFooterRow();
+
+// function handleClick() {
+//     alert("Thank you for your submission!");
+//     const newLocation = 
+// }
+function handleForm(event) {
+    // alert ("Ok");
+    event.preventDefault();
+    const formElem = event.target;
+
+    const minCustNum = parseInt(formElem.minCust.value);
+    const maxCustNum = parseInt(formElem.maxCust.value);
+    const avgCookieNum = parseInt(formElem.avgCookie.value);
+    alert(formElem["location"].value);
+    alert(formElem["minCust"].value, formElem["maxCust"].value, formElem["avgCookie"].value);
+}
+
+// const formLocation = document.getElementById("location");
+// formLocation.addEventListener("submit", handleForm);
+
+// const formMinCust = document.getElementById("minCust");
+// formMinCust.addEventListener("submit", handleForm);
+
+// const formMaxCust = document.getElementById("maxCust");
+// formMaxCust.addEventListener("submit", handleForm);
+
+// const formAvgCookies = document.getElementById("avgCookies");
+// formAvgCookies.addEventListener("submit", handleForm);
+
+const form = document.getElementById("form");
+form.addEventListener("submit", handleForm);
