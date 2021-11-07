@@ -1,16 +1,93 @@
 * {
-    background-color: rgb(245, 237, 225);
-    color: rgb(99, 3, 3);
+    background-color: #F6F4D2;
+    color: #F19C79;
+    align-content: center;
+}
+
+body {
+    display: block;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-content: center;
+}
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.vertical {
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-left: 6px solid #D4E09B;
+    border-right: 6px solid #D4E09B;
+    height: 100%;
+    position:absolute;
+    /* left: 50%; */
+}
+
+header {
+    font-family: 'Lobster', cursive;
+    font-size: 60pt;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 61%;
+}
+
+.links {
+    font-family: 'Lobster', cursive;
+    font-size: 15pt;
+    color: #A44A3F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.links:hover {
+    color: #CBDFBD;
+}
+
+.cityList {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    justify-content: space-between;
+}
+
+h2 {
+    align-content: center;
+    margin: 2rem;
+}
+
+.salmon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 table, th, td {
-    border: 1px solid darkblue;
+    border: 2px solid #CBDFBD;
   }
 
 table {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
 
+}
+
+button:hover {
+    color: #A44A3F;
+    background-color: #CBDFBD;
 }

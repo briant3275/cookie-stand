@@ -152,9 +152,9 @@ function handleForm(event) {
 
     const minCustNum = parseInt(formElem.minCust.value);
     const maxCustNum = parseInt(formElem.maxCust.value);
-    const avgCookieNum = parseInt(formElem.avgCookie.value);
-    alert(formElem["location"].value);
-    alert(formElem["minCust"].value, formElem["maxCust"].value, formElem["avgCookie"].value);
+    const avgCookieNum = parseInt(formElem.avgCookies.value);
+    alert("location:"  + formElem["location"].value);
+    console.log(formElem["minCust"].value, formElem["maxCust"].value, formElem["avgCookies"].value);
 }
 
 // const formLocation = document.getElementById("location");
