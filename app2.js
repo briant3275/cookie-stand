@@ -5,7 +5,8 @@
 // let tbody = document.createElement('tbody');
 
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-
+const cityIndex = ['seattle', 'tokyo', 'dubai', 'paris', 'lima'];
+// const listInfo = [this.minCust, this.maxCust, this.avgCookiesPerCust];
 
 
 // constructor function
@@ -18,8 +19,9 @@ function Store(location, minCust, maxCust, avgCookiesPerCust) {
     this.customersPerHour = [];
     this.hourlyCookieSale = [];
     this.totalSalePerStore = 0;
-    this.cookiePerSale = 0;
+    // this.cookiePerSale = 0;
 
+    // this.storeInfo ();
     this.randCustAmount();
     this.perHrSale();
     this.calculateStoreTotal();
@@ -57,11 +59,19 @@ const articleElem = document.createElement('article');
 cookieJar.appendChild(articleElem);
 
 
+
+
+
+
+
 //create table
 const tableElem = document.createElement('table');
 articleElem.appendChild(tableElem);
 
 //clean my rows up too
+for (let cityIndexPos = 0; cityIndexPos < cityIndex.length; cityIndexPos += 1) {
+
+}
 const topRow = document.createElement('tr');
 tableElem.appendChild(topRow);
 
@@ -139,6 +149,25 @@ const dubai = new Store('Dubai', 11, 38, 3.7);
 const paris = new Store('Paris', 20, 38, 2.3);
 const lima = new Store('Lima', 2, 16, 4.6);
 
+const seattleInfo = [23, 65, 6.3];
+const tokyoInfo = [3, 24, 1.2];
+const dubaiInfo = [11, 38, 3.7];
+const parisInfo = [20, 38, 2.3];
+const limaInfo = [2, 16, 4.6];
+
+const cityIndexVars = [seattleInfo, tokyoInfo, dubaiInfo, parisInfo, limaInfo];
+
+// list info for cities in ul above table
+function storeInfo () {
+    for (let cityIndexPos = 0; cityIndexPos < cityIndex.length; cityIndexPos += 1) {
+        let uls = document.getElementById(cityIndex[cityIndexPos]);
+        const liElem = document.createElement('li');
+        liElem.appendChild(cityIndexVars[cityIndexPos][cityIndexPos]);
+        uls.appendChild(liElem);
+    }
+}
+storeInfo();
+
 renderFooterRow();
 
 // function handleClick() {
@@ -154,7 +183,7 @@ function handleForm(event) {
     const maxCustNum = parseInt(formElem.maxCust.value);
     const avgCookieNum = parseInt(formElem.avgCookies.value);
     alert("location:"  + formElem["location"].value);
-    console.log(formElem["minCust"].value, formElem["maxCust"].value, formElem["avgCookies"].value);
+    console.log(minCustNum, maxCustNum, avgCookieNum);
 }
 
 // const formLocation = document.getElementById("location");
@@ -171,3 +200,4 @@ function handleForm(event) {
 
 const form = document.getElementById("form");
 form.addEventListener("submit", handleForm);
+
