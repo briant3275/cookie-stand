@@ -12,32 +12,37 @@
         <header>
             <h1>Pat's Salmon Cookies: Sales Data</h1>
         </header>
-        <div class="cityList">
+        <a id="backHome" href="index.html" class="links">Back to Home Page!</a>
+        <div id="cityList">
             <h2>Seattle</h2>
-            <ul id="seattle"></ul>
+            <ul id="seattleUL"></ul>
             <h2>Tokyo</h2>
-            <ul id="tokyo"></ul>
+            <ul id="tokyoUL"></ul>
             <h2>Dubai</h2>
-            <ul id="dubai"></ul>
+            <ul id="dubaiUL"></ul>
             <h2>Paris</h2>
-            <ul id="paris"></ul>
+            <ul id="parisUL"></ul>
             <h2>Lima</h2>
-            <ul id="lima"></ul>
+            <ul id="limaUL"></ul>
         </div>
-        <div id="cookieShops"></div><br><br>
+        <!-- sales data table -->
+        <div id="cookieJar"></div><br><br>
 
         <form id="form">
             <fieldset>
-                <legend>New store information</legend>
+                <legend>New store information</legend><br><br>
                 <label for="location"> Location :</label>
                     <input type="text" id="location" name="location"><br><br>
+
                 <label for="minCust"> Minimum customers per hour:</label>
                     <input type="number" id="minCust" name="minCust"><br><br>
+
                 <label for="maxCust"> Maximum customers per hour:</label>
                     <input type="number" id="maxCust" name="maxCust"><br><br>
+
                 <label for="avgCookies"> Average cookies per customer:</label>
-                    <input type="number" id="avgCookies" name="avgCookies"><br><br>
-                <button type="submit">Submit</button>
+                    <input type="float" id="avgCookies" name="avgCookies"><br><br>
+                <input type="submit" id="submitButton">Submit</input>
             </fieldset>
         </form>
 

@@ -4,10 +4,15 @@
     align-content: center;
 }
 
+#frontPage {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 body {
-    display: block;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
     align-content: center;
 }
 div {
@@ -15,7 +20,7 @@ div {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .vertical {
@@ -24,8 +29,8 @@ div {
     margin-right: 2rem;
     border-left: 6px solid #D4E09B;
     border-right: 6px solid #D4E09B;
-    height: 100%;
-    position:absolute;
+    height: 45rem;
+    position:relative;
     /* left: 50%; */
 }
 
@@ -33,12 +38,21 @@ header {
     font-family: 'Lobster', cursive;
     font-size: 60pt;
     text-align: center;
+    align-content: center;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     width: 61%;
+}
+
+#backHome{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    align-content: center;
 }
 
 .links {
@@ -55,14 +69,18 @@ header {
     color: #CBDFBD;
 }
 
-.cityList {
+#cityList {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    padding-bottom: 3rem;
+    width: 100%;
     justify-content: space-between;
 }
 
+#seattleUl{
+    display: flex;
+}
 h2 {
     align-content: center;
     margin: 2rem;
@@ -74,6 +92,12 @@ h2 {
     margin-right: auto;
 }
 
+#cookieJar {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 table, th, td {
     border: 2px solid #CBDFBD;
